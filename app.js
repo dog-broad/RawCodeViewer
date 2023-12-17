@@ -114,7 +114,7 @@ function populateGrid(workbook) {
 function importExcel() {
   makeRequest(
     'GET',
-    'https://github.com/dog-broad/CodeRankingLeaderboardCLI/raw/main/LeaderboardsStorage/CurrentCodeRankingLeaderboard.xlsx',
+    'https://raw.githubusercontent.com/dog-broad/CodeRankingLeaderboardCLI/main/LeaderboardsStorage/CurrentCodeRankingLeaderboard.xlsx',
     // success
     function (data) {
       var workbook = convertDataToWorkbook(data);
